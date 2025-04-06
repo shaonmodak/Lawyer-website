@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body, html{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+}
+/* nav */
+.header{
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+.nav-links{
+  max-width: 450px;
+  width: 100%;
+  justify-content: end;
+}
+
+.banner{
+  margin-top: 100px;
+}
+.banner-content h1{
+  font-size: 52px;
+  font-weight: 700;
+}
+.banner-content span{
+  color: #159ae7f1;
+}
+.banner-content p{
+  font-size: 22px;
+  color: #6c757d;
+}
+.banner-content ul li{
+  font-size: 22px;
+  color: #6c757d;
+
+}
+.banner-content ul li i{
+  color: #159ae7f1;
+  margin-right: 10px;
+}
+.banner-content-btn a{
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.banner-content-btn :first-child{
+  background: linear-gradient(to right,#0ACEFE, #2699FB);
+  color: white;
+}
+.banner-content-btn:first-child a:hover{
+  background: pink;
+  color: rgb(185, 185, 185);
+}
+.banner-content-btn :last-child{
+  background: rgb(211, 211, 211);
+  color: black;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.banner-form{
+  padding: 40px;
+  border-radius: 10px;
+}
+.banner-form h3{
+  font-size: 18px;
+  font-weight: 700;
+  color: #6c757d;
+}
+.banner-form .btn{
+  width: 100%;
+  padding: 10px 0;
+  background: linear-gradient(to right,#0ACEFE, #2699FB);
+  border: none;
+  color: white;
+}
+.testimonial{
+  background: url(images/Rectangle\ 6.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  z-index: 1;
+  min-height: 400px;
+  padding: 50px 0;
+  position: relative;
+}
+.testimonial .patterns{
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.testimonial h2{
+  color: white;
+  margin-bottom: 30px;
+}
+.counter-section h2{
+  font-size: 30px;
+  font-weight: 700;
+  color: #159ae7f1;
+}
+
+.highlight-cards{
+  min-height: 260px;
+}
+.highlights-section{
+  background-color: #F7FAFF;
+}
+.highlights-section h2{
+  font-size: 35px;
+  font-weight: 700;
+  color: #0A2134;
+}
+.highlights-section p{
+  font-size: 18px;
+  color: #6c757d;
+}
+.highlights-items img{
+  width: 50px;
+  object-fit: cover;
+}
+.highlights-content h4{
+  font-size: 18px;
+  font-weight: 700;
+  color: #0A2134;
+}
+.highlights-content p{
+  font-size: 15px;
+  color: #6c757d;
+}
+.comment{
+  min-height: 200px;
+  position: relative;
+  background-color: white;
+}
+.comment h3{
+  font-size: 22px;
+  font-weight: 600;
+  color: #6f6f6f;
+}
+.comment p{
+  font-size: 15px;
+  line-height: 1.71;
+}
+.commenter h4{
+  font-size: 18px;
+  font-weight: 600;
+  color: #f1f1f1;
+}
+.commenter p{
+  font-size: 14px;
+  color:#d9d3d3;
+}
+.comment::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: -10px;
+  text-align: center;
+  transform: rotate(45deg);
+}
+.about-us{
+  background-color: #F7FAFF;
+}
+.about-image{
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+}
+.admin{
+  position: absolute;
+  bottom: -80px;
+  padding: 20px 50px;
+  background-color: #094B72;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+}
+.about-image img{
+  padding-top: -150px;
+  height: 700px;
+}
+.about-us h2{
+  font-size: 32px;
+  font-weight: 600;
+}
+.carousel-item img{
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+}
+.call-us h3{
+  font-size: 48px;
+  color: #6f6f6f;
+  margin-bottom: 30px;
+}
+.call-us p{
+  font-size: 24px;
+}
+.call-us a{
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #094B72;
+  color: white;
+  max-width: 219px;
+}
+.call-us-btn:hover{
+  background: #2699FB;
+}
+.footer-logo img{
+  max-width: 160px;
+}
+.footer{
+  background-image: url(images/Rectangle\ 6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  
+}
+.footer li{
+  margin-bottom: 10px;
+}
+.footer ul{
+  padding: 0;
+}
+.logos{
+  width: 40%;
+}
+.copyright{
+  padding: 15px 30px;
+  background-color:#004D7B ;
+  color: white;
+}
+.copyright p{
+  margin-bottom: 0;
+}

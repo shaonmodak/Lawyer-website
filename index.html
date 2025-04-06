@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Project</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- media query link -->
+  <link rel="stylesheet" href="media.css">
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Fontawesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Enquiry Modal -->
+  <div class="modal fade" id="enModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Enquiry Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="banner-form p-3">
+            <h3>Book Your Free Class Now!</h3>
+            <p>2 days of free demo classes without paying in advance</p>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+            <div class="mb-3">
+              <label class="form-label">Phone</label>
+              <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">+91</span>
+              <input type="text" class="form-control" placeholder="Phone" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="mt-3">
+              <a class="btn" href="">Register Now</a>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="bookModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Enquiry Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="banner-form p-3">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+            <div class="mb-3">
+              <label class="form-label">Phone</label>
+              <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">+91</span>
+              <input type="text" class="form-control" placeholder="Phone" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <header class="header container-fluid py-2 shadow-md position-fixed top-0">
+    <nav class="navbar container navbar-expand-md navbar-light">
+      <a class="p-0 m-0 logo"><img class="w-50" src="images/logo.svg" alt=""></a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="row w-100 d-flex justify-content-end align-items-center">
+        <div class="col-lg-10">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-links ms-auto gap-5">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-lg-2 d-flex justify-content-center align-items-center">
+        <div class="search-icon">
+          <i class="fas fa-search"></i>
+          </div>
+        </div>
+    </div>
+
+    </nav>
+  </header>
+
+  <!-- Banner section -->
+  <section class="banner container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
+    <div class="container px-0">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6 col-sm-12">
+          <div class="banner-content">
+            <h1>Career Oppurtunities <br>
+              in <span>Digital Marketing</span></h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo error aperiam.</p>
+              <ul class="m-0 p-0">
+                <li class="mb-3"><i class="fa-solid fa-circle-check"></i>Specialization: Performance Marketing</li>
+                <li class="mb-3"><i class="fa-solid fa-circle-check"></i>Min salary of Rs 4.5 LPA</li>
+                <li class="mb-3"><i class="fa-solid fa-circle-check"></i>50 seats only</li>
+              </ul>
+              <div class="banner-content-btn d-flex gap-3">
+                <a class="btn" data-bs-toggle="modal" data-bs-target="#bookModal">Book 2 days Demo</a>
+                <a class="btn" data-bs-toggle="modal" data-bs-target="#enModal"><i class="fa-solid fa-download"></i>Download Curriculam</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <form action="" class="banner-form shadow-lg">
+            <h3>Book Your Free Class Now!</h3>
+            <p>2 days of free demo classes without paying in advance</p>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+            <div class="mb-3">
+              <label class="form-label">Phone</label>
+              <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">+91</span>
+              <input type="text" class="form-control" placeholder="Phone" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="mt-3">
+              <a class="btn" href="">Register Now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- stats container -->
+  <section class="features container-fluid py-lg-5 py-sm-4 py-3 text-center">
+    <div class="container shadow-lg counter-section">
+      <div class="row row-cols-lg-5 row-cols-md-2 row-cols-1 p-4">
+        <div class="col">
+          <h2>1000+</h2>
+          <p>Students Trained</p>
+        </div>
+        <div class="col">
+          <h2>4.5 LPA</h2>
+          <p>Students Trained</p>
+        </div>
+        <div class="col">
+          <h2>1000+</h2>
+          <p>Students Trained</p>
+        </div>
+        <div class="col">
+          <h2>1000+</h2>
+          <p>Students Trained</p>
+        </div>
+        <div class="col">
+          <h2>1000+</h2>
+          <p>Students Trained</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights section -->
+
+  <section class="highlights-section py-5 container-fluid">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h2>Key Highlights of the Course</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quia, voluptatum distinctio debitis officiis repellat.</p>
+        </div>
+      </div>
+      <div class="row gy-3">
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="highlights-items bg-white d-flex align-items-start p-3 gap-4">
+            <img src="images/highlights1.png" alt="">
+            <div class="highlights-content">
+              <h4>Assignments & Module Test</h4>
+              <p>Test Your Knowledge</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="highlights-items bg-white d-flex align-items-start p-3 gap-4">
+            <img src="images/highlights2.png" alt="">
+            <div class="highlights-content">
+              <h4>Industry-Recognized Certification</h4>
+              <p>Stand Out to your Professional</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="highlights-items bg-white d-flex align-items-start p-3 gap-4">
+            <img src="images/highlights3.png" alt="">
+            <div class="highlights-content">
+              <h4>Live Classes & Recorder Lectures</h4>
+              <p>Best of both worlds of learning</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="highlights-items bg-white d-flex align-items-start p-3 gap-4">
+            <img src="images/highlights4.png" alt="">
+            <div class="highlights-content">
+              <h4>Downloadable Content</h4>
+              <p>With lifetime access</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="highlights-items bg-white d-flex align-items-start p-3 gap-4">
+            <img src="images/highlights1.png" alt="">
+            <div class="highlights-content">
+              <h4>6 Industry level Projects</h4>
+              <p>Get practical skills</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-12">
+          <div class="highlights-items bg-white d-flex align-items-start p-3 gap-4">
+            <img src="images/highlights2.png" alt="">
+            <div class="highlights-content">
+              <h4>4 Live Doubt clearing Session</h4>
+              <p>Test Your Knowledge</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial container-fluid">
+    <img class="patterns" src="images/Patterns.png" alt="">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h2>Clients Testimonial</h2>
+        </div> 
+      </div>
+      <div class="row gy-3 d-flex justify-content-center">
+        <div class="col-md-5 col-12">
+          <div class="comment p-x-4 p-4 text-center shadow-lg">
+            <h3 class="mb-3">Incredible Experience</h3>
+            <p>We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+          </div>
+          <div class="commenter d-flex justify-content-center align-items-start mt-5 gap-3">
+            <img src="images/Photo.png" alt="">
+            <div>
+              <h4>Anya Tailor Joy</h4>
+            <p>CEO, SF Industires</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-12">
+          <div class="comment p-4 p-x-3 text-center shadow-lg">
+            <h3 class="mb-3">Dependable, Responsive, Professional Partner</h3>
+            <p>Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+          </div>
+          <div class="commenter d-flex justify-content-center align-items-start mt-5 gap-3">
+            <img src="images/Photo.png" alt="">
+            <div>
+            <h4>Sri Alam</h4>
+            <p>CEO, Membagongkan GROUP</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+  <section class="about-us py-5 container-fluid">
+    <div class="container">
+      <div class="row d-flex justify-content-center gap align-items-center">
+        <div class="col-lg-4 col-12 d-flex about-image">
+          <img src="images/hero-img.png" alt="">
+          <div class="admin">
+            <p>Tiara Andini</p>
+            <span>-Founder of Froala</span>
+          </div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <div class="row mb-4 text-center">
+            <h2>Why do we help with legalization?</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-12 d-flex flex-column gap-3">
+              <div class="highlight-cards d-flex flex-column justify-content-center align-items-center shadow-lg p-4">
+                <img src="images/highlights1.png" alt="">
+                <h3>Enviromental Law</h3>
+                <p>Environmental legal issues might occur since the planned business activities are designed</p>
+              </div>
+              <div class="highlight-cards shadow-lg p-4">
+                <img src="images/highlights2.png" alt="">
+                <h3>Information and Technology</h3>
+                <p>IT not followed by the existing regulation which might cause legal uncertainty and business uncertainty.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex flex-column gap-3">
+              <div class="highlight-cards shadow-lg p-4">
+                <img src="images/highlights3.png" alt="">
+                <h3>Corporate and Commercial</h3>
+                <p>We provide a complete range of services for the continuity of your business activities.</p>
+              </div>
+              <div class="highlight-cards shadow-lg p-4">
+                <img src="images/highlights4.png" alt="">
+                <h3>Other Services</h3>
+                <p>In dealing with disruptive economic and legal challenge, our firm also provide various legal services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid py-5">
+    <div class="container">
+      <div class="row call-us">
+        <div class="col-lg-7 col-12 d-flex flex-column justify-content-center">
+          <h3>Complex Questions?</h3>
+          <p>Request for a personalized budget for your legal problem. We will send you a coupe options in 24 hours. You can have free consult , if a our first customer</p>
+          <a class="btn" href="#"><i class="fa-solid fa-phone"></i> Call Us</a>
+        </div>
+        <div class="col-lg-5 col-12 d-flex justify-content-center">
+          <img src="images/Group 30.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 d-flex flex-column gap-3">
+          <h2 class="text-center fw-bold">Digital Marketing Course <br> FAQ's</h2>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic.</p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1. What is Digital Marketing
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At officiis debitis, porro numquam laborum ea, consequuntur deserunt explicabo aliquam quam aut. Fugiat quidem accusantium unde vitae quisquam quas incidunt sint quae sunt ipsum aperiam quia dolorem quibusdam asperiores magni, commodi deserunt recusandae suscipit sapiente doloremque voluptatum eligendi similique? Reiciendis, fugiat.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2.  Why is digital marketing important today?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique obcaecati voluptate perspiciatis vitae provident iure harum accusantium assumenda, expedita at ut atque laboriosam odit fugit maxime dicta accusamus unde. Laboriosam dolor, unde reiciendis asperiores at deleniti doloribus placeat dolores incidunt.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. How is digital marketing different from traditional marketing?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus voluptate blanditiis fugit, quam molestiae deleniti natus quae. Iusto ratione eveniet ad debitis veniam, porro corporis fugiat ducimus sint nam ipsam exercitationem cupiditate a magni beatae, eaque aliquam aspernatur rem delectus! Nulla rerum, ut quisquam deleniti assumenda sed ad officiis reprehenderit quo dolorem, velit impedit quis ipsa, aspernatur accusamus numquam distinctio!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer d-flex align-items-center flex-column">
+    <div class="container">
+      <div class="row">
+      <div class="footer-logo col-lg-6 col-12">
+        <div>
+          <a class="p-0 m-0"><img src="images/logo.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="row d-flex justify-content-center text-white">
+          <div class="col-3">
+            <ul>
+              <div class="footer-list-heading mb-4">
+                <p>Product</p>
+              </div>
+              <li>Overview</li>
+              <li>Features</li>
+              <li>Tutorials</li>
+              <li>Pricing</li>
+              <li>Releases</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <div class="footer-list-heading mb-4">
+                <p>Products</p>
+              </div>
+              <li>About</li>
+              <li>Press</li>
+              <li>Careers</li>
+              <li>Contact</li>
+              <li>Partners</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <div class="footer-list-heading mb-4">
+                <p>Support</p>
+              </div>
+              <li>Help Center</li>
+              <li>terms of Service</li>
+              <li>legal</li>
+              <li>Privacy & policy</li>
+              <li>Status</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+  <div class="copyright">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-4">
+          <p>© 2021 Lawliet. All rights reserved</p>
+        </div>
+        <div class="logos col-2 d-flex justify-content-start gap-4">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
